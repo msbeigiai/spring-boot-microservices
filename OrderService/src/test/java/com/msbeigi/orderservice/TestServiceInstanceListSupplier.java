@@ -21,14 +21,14 @@ public class TestServiceInstanceListSupplier implements ServiceInstanceListSuppl
                 "PAYMENT-SERVICE",
                 "PAYMENT-SERVICE",
                 "localhost",
-                8080,
+                8088,
                 false
         ));
         result.add(new DefaultServiceInstance(
                 "PRODUCT-SERVICE",
                 "PRODUCT-SERVICE",
                 "localhost",
-                8080,
+                8088,
                 false
         ));
 
