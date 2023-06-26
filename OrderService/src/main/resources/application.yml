@@ -17,6 +17,23 @@ spring:
   config:
     import: configserver:http://localhost:9296
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-64973606.okta.com/oauth2/default
+      client:
+        registration:
+          internal-client:
+            provider: okta
+            authorization-grant-type: client_credentials
+            scope: internal
+            client-id: 0oaa4cqbuyzWeNFec5d7
+            client-secret: 1TQczKd2HajEL74KggFBLI5uKHDexYU5-ybSYKms
+        provider:
+          okta:
+            issuer-uri: https://dev-64973606.okta.com/oauth2/default
+
   resilience4j:
     circuitbreaker:
       instances:
@@ -28,7 +45,7 @@ spring:
           wait-duration-in-open-state: 5s
           permitted-number-of-calls-in-half-open-state: 3
           sliding-window-size: 10
-          sliding-window-count: COUNT_BASED
+          sliding-window-type: COUNT_BASED
 
 #eureka:
 #  instance:
