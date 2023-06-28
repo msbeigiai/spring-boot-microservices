@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/CloudGateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CloudGateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ConfigServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ConfigServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OrderService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OrderService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PaymentService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PaymentService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ProductService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ProductService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServiceRegistry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServiceRegistry/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
