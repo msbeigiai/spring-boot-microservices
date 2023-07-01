@@ -14,3 +14,13 @@ metadata:
 data:
   config_url: http://config-server-svc
 
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-cm
+data:
+  hostname: mysql-0.mysql
+
+

@@ -26,7 +26,7 @@ kind: Service
 metadata:
   name: eureak
 spec:
-  clusterIp: None
+  clusterIP: None
   selector:
     app: eureka
   ports:

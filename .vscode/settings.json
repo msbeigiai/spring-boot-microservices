@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "kubernetes://schema/apps/v1%40deployment": "file:///home/mohsen/Documents/dev/java-projects/SpringBootMicroservices/k8s/payment-service-deployment.yml",
+        "kubernetes://schema/v1@persistentvolume": "file:///home/mohsen/Documents/dev/java-projects/SpringBootMicroservices/k8s/mysql-deployment.yml"
+    }
+}
