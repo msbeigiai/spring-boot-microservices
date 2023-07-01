@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: mysql-pv
+  name: mysql-pv1
 spec:
   capacity:
     storage: 1Gi
@@ -10,7 +10,7 @@ spec:
     - ReadWriteOnce
   storageClassName: manual
   hostPath:
-    path: /home/mohsen/Documents/mysql-spring-ms-data
+    path: "/mnt/data"
     type: DirectoryOrCreate
 ---
 
@@ -18,7 +18,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql-pvc
+  name: mysql-pvc1
 spec:
   resources:
     requests:
@@ -58,13 +58,13 @@ spec:
           mountPath: /docker-entrypoint-initdb.d
         - name: mysql-persistent-storage
           mountPath: /var/lib/mysql
-    volumes:
-      - name:  mysql-persistent-storage
-        persistentValumeClaim:
-          claimName: mysql-pvc
-      - name:  mysql-initdb
-        configMap:
-          name:  mysql-initdb-cm
+      volumes:
+        - name: mysql-initdb
+          configMap:
+              name: mysql-initdb-cm
+        - name:  mysql-persistent-storage
+          persistentVolumeClaim:
+            claimName: mysql-pvc
 ---
 
 # Config
