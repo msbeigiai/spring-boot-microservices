@@ -13,15 +13,15 @@ spec:
     spec:
       containers:
       - name: config-server-app
-        image: msbeigiai/configserver:latest
+        image: msbeigiai/configserver
         ports:
         - containerPort: 9296
         env:
           - name: EUREKA_SERVER_ADDRESS
             valueFrom:
               configMapKeyRef:
-                key: eureka_service_address
                 name: eureka-cm
+                key: eureka_service_address
 
 ---
 

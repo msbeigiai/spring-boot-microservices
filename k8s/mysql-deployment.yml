@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: mysql-pv1
+  name: mysql-pv
 spec:
   capacity:
     storage: 1Gi
@@ -18,7 +18,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql-pvc1
+  name: mysql-pvc
 spec:
   resources:
     requests:
